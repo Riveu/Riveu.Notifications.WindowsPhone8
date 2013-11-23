@@ -135,6 +135,11 @@
     <None Include="Service References\NotificationService\NotificationService2.xsd">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="120 Square.png" />
+    <Content Include="210 Square.png" />
+    <Content Include="270 Square.png" />
+    <Content Include="270Square.png" />
+    <Content Include="Images\120 Square.png" />
     <Content Include="Images\720P\wp_ss_20131122_0003_2.png" />
     <Content Include="Images\720P\wp_ss_20131122_0004_2.png" />
     <Content Include="Images\720P\wp_ss_20131122_0005_2.png" />
@@ -143,9 +148,6 @@
     <Content Include="Images\appbar.information.circle.png" />
     <Content Include="Images\appbar.refresh.png" />
     <Content Include="Images\appbar.user.add.png" />
-    <Content Include="Images\r-logo-120.png" />
-    <Content Include="Images\r-logo-150.png" />
-    <Content Include="Images\r-logo-300.png" />
     <Content Include="Images\wvga\wp_ss_20131122_0003.png" />
     <Content Include="Images\wvga\wp_ss_20131122_0004.png" />
     <Content Include="Images\wvga\wp_ss_20131122_0005.png" />
@@ -156,12 +158,6 @@
     <Content Include="Images\WXGA\wp_ss_20131122_0005_1.png" />
     <Content Include="Images\WXGA\wp_ss_20131122_0006_1.png" />
     <Content Include="Images\WXGA\wp_ss_20131122_0007_1.png" />
-    <Content Include="r-logo-120.png" />
-    <Content Include="r-logo-150.png" />
-    <Content Include="r-logo-210.png" />
-    <Content Include="r-logo-270.png" />
-    <Content Include="r-logo-300.png" />
-    <Content Include="r-logo.png" />
     <Content Include="ServiceReferences.ClientConfig" />
   </ItemGroup>
   <ItemGroup>

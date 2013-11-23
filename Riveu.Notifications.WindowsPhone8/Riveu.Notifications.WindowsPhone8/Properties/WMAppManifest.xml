@@ -4,8 +4,8 @@
   <Languages xmlns="">
     <Language code="en-US" />
   </Languages>
-  <App xmlns="" ProductID="{b9f6da8e-881b-45e7-995d-276781f6915b}" Title="Riveu.Notifications.WindowsPhone8" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Riveu" Description="Sample description" Publisher="Riveu" PublisherID="{b2b835d6-e8f2-4640-8444-55e317c5a127}">
-    <IconPath IsRelative="true" IsResource="false">r-logo-300.png</IconPath>
+  <App xmlns="" ProductID="{b9f6da8e-881b-45e7-995d-276781f6915b}" Title="Riveu Notifications" RuntimeType="Silverlight" Version="1.0.0.0" Genre="apps.normal" Author="Riveu" Description="This is an end-user client application for the Riveu Notifications Service. You can view and send notifications through this application. You can also receive push notifications." Publisher="Riveu" PublisherID="{b2b835d6-e8f2-4640-8444-55e317c5a127}">
+    <IconPath IsRelative="true" IsResource="false">270 Square.png</IconPath>
     <Capabilities>
       <Capability Name="ID_CAP_NETWORKING" />
       <Capability Name="ID_CAP_PUSH_NOTIFICATION" />
@@ -17,10 +17,10 @@
     <Tokens>
       <PrimaryToken TokenID="DataBoundToken" TaskName="_default">
         <TemplateFlip>
-          <SmallImageURI IsRelative="true" IsResource="false">r-logo-120.png</SmallImageURI>
+          <SmallImageURI IsRelative="true" IsResource="false">270 Square.png</SmallImageURI>
           <Count>0</Count>
-          <BackgroundImageURI IsRelative="true" IsResource="false">r-logo-150.png</BackgroundImageURI>
-          <Title>Riveu.Notifications.WindowsPhone8</Title>
+          <BackgroundImageURI IsRelative="true" IsResource="false">270 Square.png</BackgroundImageURI>
+          <Title>Notifications</Title>
           <BackContent>
           </BackContent>
           <BackBackgroundImageURI>
@@ -29,8 +29,7 @@
           </BackTitle>
           <DeviceLockImageURI>
           </DeviceLockImageURI>
-          <HasLarge>
-          </HasLarge>
+          <HasLarge>False</HasLarge>
         </TemplateFlip>
       </PrimaryToken>
     </Tokens>
