@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="NotificationService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://riveu.com/riveu/NotificationService.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://riveu.com/riveu/NotificationService.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://riveu.com/riveu/NotificationService.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="INotificationService_AuthenticateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUser" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_AuthenticateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AuthenticateUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_GetNotifications_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotifications" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_GetNotifications_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetNotificationsResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_RegisterSubscriber_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterSubscriber" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_RegisterSubscriber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterSubscriberResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_UnregisterSubscriber_InputMessage">
+    <wsdl:part name="parameters" element="tns:UnregisterSubscriber" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_UnregisterSubscriber_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UnregisterSubscriberResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_SendNotification_InputMessage">
+    <wsdl:part name="parameters" element="tns:SendNotification" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_SendNotification_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SendNotificationResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_RegisterUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUser" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_RegisterUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:RegisterUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_VerifyUserAccountExists_InputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyUserAccountExists" />
+  </wsdl:message>
+  <wsdl:message name="INotificationService_VerifyUserAccountExists_OutputMessage">
+    <wsdl:part name="parameters" element="tns:VerifyUserAccountExistsResponse" />
+  </wsdl:message>
+  <wsdl:portType name="INotificationService">
+    <wsdl:operation name="AuthenticateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/AuthenticateUser" message="tns:INotificationService_AuthenticateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/AuthenticateUserResponse" message="tns:INotificationService_AuthenticateUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetNotifications">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/GetNotifications" message="tns:INotificationService_GetNotifications_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/GetNotificationsResponse" message="tns:INotificationService_GetNotifications_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterSubscriber">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/RegisterSubscriber" message="tns:INotificationService_RegisterSubscriber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/RegisterSubscriberResponse" message="tns:INotificationService_RegisterSubscriber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UnregisterSubscriber">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/UnregisterSubscriber" message="tns:INotificationService_UnregisterSubscriber_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/UnregisterSubscriberResponse" message="tns:INotificationService_UnregisterSubscriber_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SendNotification">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/SendNotification" message="tns:INotificationService_SendNotification_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/SendNotificationResponse" message="tns:INotificationService_SendNotification_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/RegisterUser" message="tns:INotificationService_RegisterUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/RegisterUserResponse" message="tns:INotificationService_RegisterUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserAccountExists">
+      <wsdl:input wsaw:Action="http://tempuri.org/INotificationService/VerifyUserAccountExists" message="tns:INotificationService_VerifyUserAccountExists_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/INotificationService/VerifyUserAccountExistsResponse" message="tns:INotificationService_VerifyUserAccountExists_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_INotificationService" type="tns:INotificationService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="AuthenticateUser">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/AuthenticateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetNotifications">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/GetNotifications" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterSubscriber">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/RegisterSubscriber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UnregisterSubscriber">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/UnregisterSubscriber" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SendNotification">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/SendNotification" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="RegisterUser">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/RegisterUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyUserAccountExists">
+      <soap:operation soapAction="http://tempuri.org/INotificationService/VerifyUserAccountExists" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NotificationService">
+    <wsdl:port name="BasicHttpBinding_INotificationService" binding="tns:BasicHttpBinding_INotificationService">
+      <soap:address location="http://riveu.com/riveu/NotificationService.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
